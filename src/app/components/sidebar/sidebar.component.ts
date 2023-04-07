@@ -1,6 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-
 
 @Component({
   selector: 'app-sidebar',
@@ -23,8 +21,4 @@ export class SidebarComponent {
   toggle(open: boolean): void {
     this.open = open;
   }
-
-  readonly testForm = new FormGroup({
-    testValue: new FormControl(''),
-  });
 }
